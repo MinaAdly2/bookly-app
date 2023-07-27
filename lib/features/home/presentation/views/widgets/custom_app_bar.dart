@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
         start: 24,
         end: 16,
         top: 40,
-        bottom: 40,
+        bottom: 20,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
