@@ -18,7 +18,10 @@ class BookDetailsSection extends StatelessWidget {
             end: width * 0.2,
             top: 30,
           ),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imagUrl:
+                'https://w7.pngwing.com/pngs/223/934/png-transparent-cristiano-ronaldo.png',
+          ),
         ),
         const SizedBox(height: 40),
         const Text(

@@ -16,12 +16,16 @@ class FeaturedBooksListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * 0.3,
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
-              itemCount: 10,
+              itemCount: state.books.length,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsetsDirectional.symmetric(horizontal: 8),
-                  child: CustomBookImage(),
+                return Padding(
+                  padding: const EdgeInsetsDirectional.symmetric(horizontal: 8),
+                  child: CustomBookImage(
+                      imagUrl: state
+                              .books[index].volumeInfo.imageLinks?.thumbnail ??
+                          'https://www.groovypost.com/wp-content/uploads/2013/08/Google-Play-Books.png'),
                 );
               },
             ),

@@ -14,7 +14,9 @@ class SimilarBooksListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsetsDirectional.symmetric(horizontal: 5),
-            child: CustomBookImage(),
+            child: CustomBookImage(
+                imagUrl:
+                    'https://w7.pngwing.com/pngs/223/934/png-transparent-cristiano-ronaldo.png'),
           );
         },
       ),
