@@ -23,9 +23,9 @@ class FeaturedBooksListView extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsetsDirectional.symmetric(horizontal: 8),
                   child: CustomBookImage(
-                      imagUrl: state
-                              .books[index].volumeInfo.imageLinks?.thumbnail ??
-                          'https://www.groovypost.com/wp-content/uploads/2013/08/Google-Play-Books.png'),
+                      imagUrl:
+                          state.books[index].volumeInfo.imageLinks?.thumbnail ??
+                              ''),
                 );
               },
             ),
