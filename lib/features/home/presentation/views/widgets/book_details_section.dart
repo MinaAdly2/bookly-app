@@ -15,8 +15,8 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsetsDirectional.only(
-            start: width * 0.2,
-            end: width * 0.2,
+            start: width * 0.26,
+            end: width * 0.26,
             top: 30,
           ),
           child: CustomBookImage(
@@ -47,7 +47,7 @@ class BookDetailsSection extends StatelessWidget {
           count: bookModel.volumeInfo.ratingsCount ?? 0,
         ),
         const SizedBox(height: 37),
-        const BookActions(),
+        BookActions(bookModel: bookModel),
       ],
     );
   }
